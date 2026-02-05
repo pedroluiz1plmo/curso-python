@@ -57,7 +57,7 @@ print(time.strptime(Time_Texto, '%d %B, %Y'))
 Pacote Externo - Math
 import math
 '''
-
+Tupla= (1, 4, 10 ,20 , 45)
 Tupla_1 = (10,5,20,30,40)
 min(Tupla) #seleciona o menor valor da tupla
 max(Tupla_1) #seleciona o maior valor da tupla
