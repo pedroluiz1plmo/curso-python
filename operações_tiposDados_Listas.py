@@ -1,21 +1,3 @@
-print("O que você quer executar?")
-print("\n1-Operações")
-print("\n2-Listas, Tuplas e Dicionários")
-print("\n")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # operações
 #SOMA
 print(1+1)
@@ -276,3 +258,109 @@ print(10>8)
 print(10<8)
 print(10<=8)
 print(10>=8)
+
+
+'''
+Operadores Lógicos
+
+1. and (faz duas comparaçõse e só retorna verdadeiro se ambas forem verdadeiras)
+2. or (se uma das duas for verdadeiro, retorna verdadeira)
+3. not (inverte o resultado, torna false em verdadeiro e vice-versa)
+'''
+print('\n\n', 10 == 10 and 10 < 20)
+print( 10>20 or 10<8)
+print( not 10>20 or 10<8)
+
+
+
+
+'''
+Operadores de Identidade
+
+
+is (retorna TRUE se ambas as variáveis forem o mesmo objeto)
+is not (retorna TRUE se ambas as variáveis não forem o mesmo objeto)
+'''
+
+print('\n\n', type(Minha_String) is type(Nome_Completo))
+print(type(Minha_String) is not type(Nome_Completo))
+
+
+
+
+'''
+Operadores de Associação 
+
+in (retorna TRUE se uma sequência com o valor especificado estiver presente no objeto)
+not in (retorna TRUE se uma sequência com o valor especificado não estiver presente no objeto)
+'''
+
+Lista_Ações = ['Magalu', 'Via', 'Carrefour']
+
+'Via' in Lista_Ações #devolve TRUE
+'zz' in Lista_Ações #devolve FALSE
+
+'Via' not in Lista_Ações #devolve FALSE
+'zz' not in Lista_Ações #devolve TRUE
+
+
+'''
+Manipulando Listas
+
+Comandos mais utilizados:
+
+    1- append() - Para adicionar um item ao final da lista 
+    2- len() - Calcular o tamanho da lista
+    3- [] - Acessar posições da lista
+    4- del() - Excluir um elemento
+    5- clear() - Limpar a lista
+    6- insert() - Para inserir um item de lista em um índice específicado, empurrando os valores seguintes para a 'direita'
+    7- extend() - Anexar elementos de outra lista à lista atual
+    8- remove() - Remove o item especificado
+    9- pop() - Remove o índice especificado
+    10- sort() - Ordenar os avloers
+    11-copy() - Faz uma cópia da lista
+    12- index() - Retorna o index do elemento da lista
+'''
+
+Lista_Vazia = []
+print ( Lista_Vazia )
+
+Lista_Vazia.append( 1 )
+Lista_Vazia.append( 2 )
+Lista_Vazia.append( 3 )
+Lista_Vazia.append( 'Valor' )
+
+print ( Lista_Vazia )
+print (Lista_Vazia[0])
+print(len(Lista_Vazia))
+#del(Lista_Vazia) vai apagar a lista e não vai mais ser possível acessá-la 
+Lista_Vazia.clear()
+print(Lista_Vazia)
+
+
+Lista_Vazia.append( 1 )
+Lista_Vazia.append( 2 )
+Lista_Vazia.insert(0, '0')
+print(Lista_Vazia)
+
+Lista_01 = [1,2,3]
+Lista_02 = [4,5,6]
+Lista_01.extend(Lista_02)
+print(Lista_01)
+
+Lista_01.remove(5) #apaga o elemento em específico de uma lista, caso seja conhecido
+Lista_01
+
+Lista_01.pop(0) #apaga o lugar na lista, o que a gente chama de index
+print(Lista_01)
+
+Lista_ABC = ['z', 'c', 'f', 'H', 'A']
+Lista_ABC.sort() #ordena a lista, em letras maísculas, e depois minúsculas, tudo em ordem alfabética.
+print(Lista_ABC)
+
+Lista_Nova = Lista_ABC
+
+Lista_Nova.index('H') #retorna a posição do caractere procurado.
+
+
