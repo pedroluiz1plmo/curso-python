@@ -1,5 +1,5 @@
 import time
-
+import random
 
 
 '''
@@ -163,6 +163,9 @@ print(max(Lista))
 print(min(Lista)) 
 '''
 
+
+
+'''
 print('calculo de fatorial de um número')
 numero = int(input('digite o número '))
 fatorial = int(1)
@@ -170,4 +173,74 @@ for Loop in range (numero, 0 , -1):
     fatorial = fatorial*numero
     numero = numero -1 
 print(fatorial)
+'''
 
+
+'''
+# 1. O computador escolhe um número secreto entre 1 e 10
+computador = random.randint(1, 10)
+
+print("--- JOGO DA ADIVINHAÇÃO ---")
+print("Tente adivinhar o número que eu escolhi entre 1 e 10!")
+
+acertou = False
+
+# 2. Enquanto o jogador não acertar, o jogo continua
+while not acertou:
+    chute = int(input("Qual o seu palpite? "))
+    
+    if chute == computador:
+        print("🎉 PARABÉNS! Você acertou!")
+        acertou = True  # Isso faz o loop parar
+    elif chute < computador:
+        print("Mais alto... Tente novamente.")
+    else:
+        print("Mais baixo... Tente novamente.")
+
+print("Obrigado por jogar!")
+
+'''
+
+'''
+# 1. Pedimos a frase e já transformamos tudo em minúsculo (.lower())
+# Isso facilita porque não precisamos testar 'A' e 'a' separadamente.
+frase = input("Digite uma frase: ").lower()
+
+# 2. Definimos o que é uma vogal e criamos o contador
+vogais = "aeiou"
+contador = 0
+
+# 3. O 'for' vai passar por cada letra da frase
+for letra in frase:
+    if letra in vogais:
+        contador += 1  # Se a letra for uma vogal, soma 1
+
+print(f"A frase tem {contador} vogais ao todo.")
+'''
+
+
+
+'''
+# 1. Criamos um dicionário vazio
+boletim = {}
+
+# 2. Vamos cadastrar 3 alunos para testar
+for i in range(3):
+    nome = input(f"Digite o nome do {i+1}º aluno: ")
+    nota = float(input(f"Digite a nota de {nome}: "))
+    boletim[nome] = nota  # Aqui associamos a chave (nome) ao valor (nota)
+
+# 3. Agora vamos descobrir quem teve a maior nota
+melhor_aluno = ""
+maior_nota = 0
+
+# O .items() nos dá a Chave e o Valor ao mesmo tempo
+for nome, nota in boletim.items():
+    if nota > maior_nota:
+        maior_nota = nota
+        melhor_aluno = nome
+
+print("-" * 20)
+print(f"O aluno com a maior nota foi {melhor_aluno} com {maior_nota}!")
+
+'''
