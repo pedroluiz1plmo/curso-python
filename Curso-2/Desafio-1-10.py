@@ -10,15 +10,16 @@ Aquecimento
 import numpy as np
 import matplotlib as mpl
 import random as rand
+import math
 
 
 '''
 3. Crie um programa que leia a seguinte lista de números e escolha um número desta aleatoriamente.
-'''
+
 lista = [8, 12, 54, 23, 43, 1, 90, 87, 105, 77]
 #Copiar código
 print(rand.choice(lista))
-
+'''
 
 
 
@@ -28,11 +29,11 @@ print(rand.choice(lista))
 Dica: use a função randrange() da biblioteca random. 
 Essa função recebe como parâmetro o valor limite para a escolha aleatória ou um intervalo se passado o limite mínimo e máximo. 
 Por exemplo, randrange(5) gera valores inteiros menores que 5.
-'''
+
 
 print(rand.randrange(1,100))
 
-
+'''
 
 
 
@@ -42,11 +43,13 @@ print(rand.randrange(1,100))
 5. Crie um programa que solicite à pessoa usuária digitar dois números inteiros e calcular a potência do 1º número elevado ao 2º.
 
 Dica: use a função pow() da biblioteca math
+
+
+var1 = int(input('digite o primeiro valor   '))
+var2 = int(input('digite o segundo valor    '))
+varR = pow(var1,var2)
+print(varR)
 '''
-
-
-
-
 
 
 '''
@@ -55,21 +58,54 @@ Aplicando a projetos
 A lista de participantes é numerada e devemos escolher aleatoriamente um número de acordo com a quantidade de participantes. 
 Peça à pessoa usuária para fornecer o número de participantes do sorteio e devolva para ela o número sorteado.
 
+
+print('programa para sortear o número de uma pesosa')
+part = int(input("quantas pessoas compraram?    "))
+print('a pessoa com o número:',rand.randrange(1,part+1),'ganhou!!!!')
+'''
+
+
+
+'''
 7. Você recebeu uma demanda para gerar números de token para acessar o aplicativo de uma empresa. 
 O token precisa ser par e variar de 1000 até 9998. 
 Escreva um código que solicita à pessoa usuária o seu nome e exibe uma mensagem junto a esse token gerado aleatoriamente.
 
 "Olá, [nome], o seu token de acesso é [token]! Seja bem-vindo(a)!"
 
-8. Para diversificar e atrair novos(as) clientes, uma lanchonete criou um item misterioso em seu cardápio chamado "salada de frutas surpresa". Neste item, são escolhidas aleatoriamente 3 frutas de uma lista de 12 para compor a salada de frutas da pessoa cliente. Crie o código que faça essa seleção aleatória de acordo com a lista abaixo:
+
+print('gerador de token')
+nome = str(input('qual o seu nome:  '))
+token = rand.randrange(1000, 10000, 2)
+print(f"Olá, {nome}, o seu token de acesso é {token}! Seja bem-vindo(a)!")
+'''
+
+
+
+'''
+8. Para diversificar e atrair novos(as) clientes, uma lanchonete criou um item misterioso em seu 
+cardápio chamado "salada de frutas surpresa". 
+Neste item, são escolhidas aleatoriamente 3 frutas de uma lista de 12 para compor a salada de frutas da pessoa cliente. 
+Crie o código que faça essa seleção aleatória de acordo com a lista abaixo:
+
+
+Copiar código
+
 
 frutas = ["maçã", "banana", "uva", "pêra", 
           "manga", "coco", "melancia", "mamão",
           "laranja", "abacaxi", "kiwi", "ameixa"]
-Copiar código
-9. Você recebeu um desafio de calcular a raiz quadrada de uma lista de números, identificando quais resultaram em um número inteiro. A lista é a seguinte:
 
-numeros = [2, 8, 15, 23, 91, 112, 256]
+salada = rand.choices(frutas, k=3)
+print(salada)
+'''
+
+
+
+'''
+9. Você recebeu um desafio de calcular a raiz quadrada de uma lista de números, identificando quais resultaram em um número inteiro.
+A lista é a seguinte:
+
 Copiar código
 No final, informe quais números possuem raízes inteiras e seus respectivos valores.
 
@@ -85,11 +121,52 @@ Saída:
 1.5 é inteiro? : False
 2 é inteiro? : True
 Copiar código
-10. Faça um programa para uma loja que vende grama para jardins. Essa loja trabalha com jardins circulares e o preço do metro quadrado da grama é de R$ 25,00. Peça à pessoa usuária o raio da área circular e devolva o valor em reais do quanto precisará pagar.
 
-Dica: use a variável pi e o método pow() da biblioteca math. O cálculo da área de um círculo é de: A = π*r^2 (lê-se pi vezes raio ao quadrado).
+
+
+numeros = [2, 8, 15, 23, 91, 112, 256]
+# iniciando uma lista vazia para receber as raízes
+raiz = []
+
+# laço for para calcular cada raiz da lista de números e adicionar a lista raiz
+for numero in numeros:
+  raiz.append(math.sqrt(numero))
+
+# laço for para ler a lista raiz e exibir um texto só quando a raiz for um valor inteiro 
+for i in range(len(raiz)):
+  # condição para testar se um número é inteiro (Ex: 2.5 // 1 = 2 ... 2 != 2.5)
+  if raiz[i] // 1 == raiz[i]:
+    print(f"O número {numeros[i]} possui raiz quadrada inteira igual a {int(raiz[i])}")
+'''
+
+
+'''
+10. Faça um programa para uma loja que vende grama para jardins. 
+Essa loja trabalha com jardins circulares e o preço do metro quadrado da grama é de R$ 25,00. 
+Peça à pessoa usuária o raio da área circular e devolva o valor em reais do quanto precisará pagar.
+
+Dica: use a variável pi e o método pow() da biblioteca math. 
+O cálculo da área de um círculo é de: A = π*r^2 (lê-se pi vezes raio ao quadrado).
 
 Caso precise de ajuda, opções de solução das atividades estão disponíveis na seção “Opinião da pessoa instrutora”.
 
-OBS: Para ajudar a verificar seus códigos, disponibilizamos um notebook dos desafios para construir suas soluções. Você pode baixar ele para resolver as atividades e desafios testando os seus conhecimentos até o momento.
+OBS: Para ajudar a verificar seus códigos, disponibilizamos um notebook dos desafios para construir suas soluções. 
+Você pode baixar ele para resolver as atividades e desafios testando os seus conhecimentos até o momento.
 '''
+
+
+
+print('venda de grama para jardins')
+r = float(input('digite o valor do raio da área desejada'))
+A = math.pi*(math.pow(r,2))
+preco_a = A*25.00
+print(f"Você precisará pagar R$ {round(valor,2)} por uma área de {round(area,2)} metros de grama")
+
+
+
+
+
+
+
+
+
