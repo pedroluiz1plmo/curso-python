@@ -150,13 +150,82 @@ Copiar código
 Provável texto exibido:
 
 "A pontuação do time foi de [pontos] e seu aproveitamento foi de [aprov]%"
-'''
+
 gols_marcados = [2, 1, 3, 1, 0]
 gols_sofridos = [1, 2, 2, 1, 3]
-
+pontos = 0
 
 def calcula_pontos(marcados, sofridos):
-    pontos = 0
+  total_pontos = 0
+  
+  # Usamos o range para acessar o mesmo índice nas duas listas
+  for i in range(len(marcados)):
+      if marcados[i] > sofridos[i]:
+          total_pontos += 3  # Vitória
+      elif marcados[i] == sofridos[i]:
+          total_pontos += 1  # Empate
+      else:
+          pass # Derrota (0 pontos)
+          
+  return total_pontos
+
+pontos = calcula_pontos(gols_marcados, gols_sofridos)
+
+print('a quantidade de pontos foi de ', pontos)
+'''  
 
        
+'''
+9. Você recebeu o desafio de criar um código que calcula os gastos de uma viagem para um das quatro cidades partindo de Recife, 
+sendo elas: Salvador, Fortaleza, Natal e Aracaju.
 
+O custo da diária do hotel é de 150 reais em todas elas e o consumo de gasolina na viagem de carro é de 14 km/l, 
+sendo que o valor da gasolina é de 5 reais o litro.
+O gastos com passeios e alimentação a se fazer em cada uma delas por dia seria de [200, 400, 250, 300], respectivamente.
+
+Sabendo que as distâncias entre Recife e cada uma das cidades é de aproximadamente [850, 800, 300, 550] km, 
+crie três funções nas quais: 
+
+a 1ª função calcule os gastos com hotel (gasto_hotel), 
+a 2ª calcule os gastos com a gasolina (gasto_gasolina) e 
+a 3ª os gastos com passeio e alimentação (gasto_passeio).
+
+Para testar, simule uma viagem de 3 dias para Salvador partindo de Recife. Considere a viagem de ida e volta de carro.
+
+"Com base nos gastos definidos, uma viagem de [dias] dias para [cidade] saindo de Recife custaria [gasto
+
+'''
+
+lista_cidades = ['Salvador', 'Fortaleza', 'Natal', 'Aracaju']
+lista_distancia = [850, 800, 300, 550]
+lista_passeio = [200, 400, 250, 300]
+gasto = float(0.0)
+
+
+def diaria(dias): # a 1ª função calcule os gastos com hotel (gasto_hotel), 
+  valor = dias * 150
+  return  valor
+
+def litros(escolha_cidade, cidade, km): # a 2ª calcule os gastos com a gasolina (gasto_gasolina) e 
+  valor = 5*(km[escolha_cidade]/14)
+  return  valor
+
+def passeio(escolha_cidade, escolha_dias, diaria): # a 3ª os gastos com passeio e alimentação (gasto_passeio).
+  valor = diaria[escolha_cidade] * escolha_dias
+  return valor3
+    
+    
+    
+i = 1
+print ('selecione para qual cidade você vai')
+for i in range(len(lista_cidades)):
+  print(i, "  ", lista_cidades[i])
+escolha_cidade = int(input())
+    
+escolha_dias = int(input("quantos dias pretendem ficar?"))  
+
+gasto = diaria(escolha_dias) + litros(escolha_cidade, lista_cidades,lista_distancia) + passeio(escolha_cidade, escolha_dias, lista_passeio)  
+
+total_litros = litros(escolha_cidade, lista_cidades,lista_distancia)
+
+print("Com base nos gastos definidos, uma viagem de",escolha_dias, "dias para", escolha_dias, "saindo de Recife custaria", gasto)
