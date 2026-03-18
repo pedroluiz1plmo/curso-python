@@ -1,0 +1,7 @@
+[
+  {"id_venda": 1, "data": "2024-03-01", "id_produto": 1001, "id_cliente": 50, "qtd": 2},
+  {"id_venda": 2, "data": "2024-03-01", "id_produto": 1002, "id_cliente": 51, "qtd": 1},
+  {"id_venda": 3, "data": "2024-03-02", "id_produto": 1001, "id_cliente": 52, "qtd": 1},
+  {"id_venda": 4, "data": "2024-03-02", "id_produto": 1003, "id_cliente": 50, "qtd": 5},
+  {"id_venda": 5, "data": "2024-03-03", "id_produto": 1004, "id_cliente": 53, "qtd": 2}
+]

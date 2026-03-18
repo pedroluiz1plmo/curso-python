@@ -1,0 +1,6 @@
+id_venda,data,id_produto,id_cliente,qtd,nome,preco,categoria,subtotal
+1.0,2024-03-01,1001,50.0,2.0,Teclado,150.0,Periféricos,300.0
+3.0,2024-03-02,1001,52.0,1.0,Teclado,150.0,Periféricos,150.0
+2.0,2024-03-01,1002,51.0,1.0,Mouse,80.0,Periféricos,80.0
+4.0,2024-03-02,1003,50.0,5.0,Cabo HDMI,25.0,Acessórios,125.0
+5.0,2024-03-03,1004,53.0,2.0,,500.0,,1000.0

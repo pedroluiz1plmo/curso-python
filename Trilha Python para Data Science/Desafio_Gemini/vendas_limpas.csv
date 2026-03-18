@@ -1,0 +1,11 @@
+id_pedido,data,cliente,produto,categoria,preco,quantidade,desconto,total
+101,2023-01-10,Ana Silva,Mouse Sem Fio,Acessórios,89.9,2.0,5,179.8
+102,2023-10-02,Bruno Souza,Teclado Mecânico,Acessórios,250.0,1.0,0,250.0
+103,2023-03-10,Carla Dias,Monitor 24',Monitores,850.0,1.0,10,850.0
+104,2023-04-10,Ana Silva,Mouse Sem Fio,Acessórios,89.9,2.0,5,179.8
+105,2023-05-10,Daniel Oliveira,Notebook Pro,Computadores,4500.0,1.0,0,4500.0
+106,2023-10-06,Elisa Gomes,Cadeira Gamer,Móveis,1269.98,1.0,15,1269.98
+107,2023-07-10,Fabio Lima,Headset USB,Acessórios,120.0,3.0,0,360.0
+108,2023-08-10,Gabriela Costa,Monitor 24',Monitores,850.0,2.0,10,1700.0
+109,2023-09-10,Hélio Santos,Webcam HD,Acessórios,180.0,1.0,5,180.0
+110,2023-10-10,Igor Rocha,Notebook Pro,Computadores,4500.0,1.0,20,4500.0

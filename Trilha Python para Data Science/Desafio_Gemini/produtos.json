@@ -1,0 +1,6 @@
+[
+  {"id_produto": 1001, "nome": "Teclado", "preco": 150.0, "categoria": "Periféricos"},
+  {"id_produto": 1002, "nome": "Mouse", "preco": 80.0, "categoria": "Periféricos"},
+  {"id_produto": 1003, "nome": "Cabo HDMI", "preco": 25.0, "categoria": "Acessórios"},
+  {"id_produto": 1005, "nome": "Monitor 4K", "preco": 2100.0, "categoria": "Monitores"}
+]
