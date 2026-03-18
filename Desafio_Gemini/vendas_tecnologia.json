@@ -1,0 +1,12 @@
+[
+  {"id_pedido": 101, "data": "2023-10-01", "cliente": "ana silva", "produto": "Mouse Sem Fio", "categoria": "Acessórios", "preco": 89.9, "quantidade": 2, "desconto": "5%"},
+  {"id_pedido": 102, "data": "02/10/2023", "cliente": "BRUNO SOUZA", "produto": "Teclado Mecânico", "categoria": "Acessórios", "preco": 250.0, "quantidade": 1, "desconto": null},
+  {"id_pedido": 103, "data": "2023-10-03", "cliente": "Carla Dias", "produto": "Monitor 24'", "categoria": "Monitores", "preco": 850.0, "quantidade": null, "desconto": "10%"},
+  {"id_pedido": 104, "data": "2023-10-04", "cliente": "ana silva", "produto": "Mouse Sem Fio", "categoria": "Acessórios", "preco": 89.9, "quantidade": 2, "desconto": "5%"},
+  {"id_pedido": 105, "data": "2023-10-05", "cliente": "Daniel Oliveira", "produto": "Notebook Pro", "categoria": "Computadores", "preco": 4500.0, "quantidade": 1, "desconto": "0%"},
+  {"id_pedido": 106, "data": "06-10-2023", "cliente": "ELISA GOMES", "produto": "Cadeira Gamer", "categoria": "Móveis", "preco": null, "quantidade": 1, "desconto": "15%"},
+  {"id_pedido": 107, "data": "2023-10-07", "cliente": "Fabio Lima", "produto": "Headset USB", "categoria": "Acessórios", "preco": 120.0, "quantidade": 3, "desconto": null},
+  {"id_pedido": 108, "data": "2023-10-08", "cliente": "GABRIELA COSTA", "produto": "Monitor 24'", "categoria": "Monitores", "preco": 850.0, "quantidade": 2, "desconto": "10%"},
+  {"id_pedido": 109, "data": "2023-10-09", "cliente": "Hélio Santos", "produto": "Webcam HD", "categoria": "Acessórios", "preco": 180.0, "quantidade": 1, "desconto": "5%"},
+  {"id_pedido": 110, "data": "2023-10-10", "cliente": "Igor Rocha", "produto": "Notebook Pro", "categoria": "Computadores", "preco": 4500.0, "quantidade": 1, "desconto": "20%"}
+]
